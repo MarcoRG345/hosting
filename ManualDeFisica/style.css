@@ -1,0 +1,72 @@
+
+body{
+    background-color: black;
+}
+ 
+h1{
+    font-size: 3em;
+    position:relative;
+    color: #ffffff; /* Color del texto */
+            text-shadow: 0 0 10px darkcyan, /* Sombras neon */
+                        0 0 20px darkcyan,
+                        0 0 40px darkcyan,
+                        0 0 60px darkcyan,
+                        0 0 80px darkcyan,
+                        0 0 100px darkcyan,
+                        0 0 120px darkcyan,
+                        0 0 140px darkcyan;
+            transition: text-shadow 0.5s ease;
+}
+p {
+    text-align: center;
+    color: magenta;
+    font-weight: bold;
+    text-shadow: 0 0 10px darkmagenta, /* Sombras neon */
+                        0 0 20px darkmagenta,
+                        0 0 40px darkmagenta,
+                        0 0 60px darkmagenta,
+                        0 0 80px darkmagenta,
+                        0 0 100px darkmagenta,
+                        0 0 120px darkmagenta,
+                        0 0 140px darkmagenta;
+}
+
+/*pdf container*/
+iframe{
+    height: 400px;
+    width: 800px;
+    margin:auto;
+    display: flex;
+    animation: liftUp 2s infinite alternate; 
+}
+@keyframes liftUp {
+    0% {
+        transform: translateY(0); /* La posición inicial */
+    }
+    100% {
+        transform: translateY(-10px); /* La posición final */
+    }
+}
+/*imagenes*/
+.img1{
+    background-image: url(imagen3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 2s ease;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease, transform 0.3s ease;
+    box-shadow: 0 0 5px darkorchid, /* Sombras neon */
+                0 0 10px darkorchid,
+                0 0 20px darkorchid,
+                0 0 30px darkorchid,
+                0 0 40px darkorchid,
+                0 0 80px darkorchid,
+                0 0 90px darkorchid,
+                0 0 100px darkorchid;
+}
+.img1:hover{
+    border-color: darkgoldenrod;
+    transform: translateY(-5px);
+    box-shadow: 0 0 80px darkgoldenrod;
+}
+
